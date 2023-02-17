@@ -3,18 +3,18 @@
 #include <time.h>
 /**
  * main - entry point
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int n;
 	int L; 
-
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	L = n%10;
+	L = n % 10;
 	if (L > 5)
 	{
-		printf("Last digut of %i is %i and greater than 5", n, L);
+		printf("Last digit of %i is %i and greater than 5", n, L);
 	}
 	else if (L == 0)
 	{
