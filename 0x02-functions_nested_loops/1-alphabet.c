@@ -4,6 +4,8 @@
  *
  * Return: Always 0.
  */
+void print_alphabet();
+
 void print_alphabet()
 {
 	char i;
@@ -13,6 +15,6 @@ void print_alphabet()
 }
 int main(void)
 {
-    print_alphabet();
-    return (0);
+	print_alphabet();
+	return (0);
 }
