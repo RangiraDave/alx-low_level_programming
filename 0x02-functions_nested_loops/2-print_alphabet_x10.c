@@ -1,7 +1,7 @@
-#include "stdio.h"
+#include "main.h"
 /**
- * main - check the code.
- * Return: Always 0.
+ * print - check the code.
+ * Return: Always 0 (Success)
  */
 void print_alphabet_x10(void)
 {
@@ -14,9 +14,4 @@ void print_alphabet_x10(void)
 			putchar(a);
 		putchar('\n');
 	}
-}
-int main(void)
-{
-    print_alphabet_x10();
-    return (0);
 }  
