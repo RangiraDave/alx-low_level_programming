@@ -1,6 +1,6 @@
-#include "stdio.h"
+#include "main.h"
 /**
- * main - check the code
+ *print_alphabet - to print lowecase lettles
  *
  * Return: Always 0.
  */
@@ -12,9 +12,4 @@ void print_alphabet()
 	for (i = 'a'; i <= 'z'; i++)
 		putchar(i);
 	putchar('\n');
-}
-int main(void)
-{
-	print_alphabet();
-	return (0);
 }
