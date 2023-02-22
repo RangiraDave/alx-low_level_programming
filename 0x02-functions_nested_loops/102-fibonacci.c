@@ -13,7 +13,7 @@ int main(void)
 	long int k, t;
 
 	printf("1, 2, ");
-	while (while t <= 50)
+	while (t <= 50)
 	{
 		k = i + j;
 		i = j;
