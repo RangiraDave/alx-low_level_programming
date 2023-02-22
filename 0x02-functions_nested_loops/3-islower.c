@@ -4,7 +4,10 @@
  */
 char _islower(char c)
 {
-	if (_islower(c))
+	int i;
+
+	i=islower(c);
+	if (true)
 		return (1);
 	else
 		return (0);
