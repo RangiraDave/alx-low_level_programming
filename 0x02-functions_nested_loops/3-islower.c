@@ -8,7 +8,7 @@ int _islower(int c)
 
 	c=islower(i);
 	if (c == 1)
-		return (1);
+		_putchar('1');
 	else
-		return (0);
+		_putchar('0');
 }
