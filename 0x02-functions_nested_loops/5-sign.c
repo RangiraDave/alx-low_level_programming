@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign.c - check the code.
+ * print_sign - check the code.
  *
  * @n: Variable
  *
