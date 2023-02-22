@@ -4,9 +4,9 @@
  * _isalpha() - check the code.
  * Return: Always 0.
  */
-int _isalpha(int n)
+int _isalpha(int c)
 {
-	if (_isalpha(n))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	else
 		return (0);

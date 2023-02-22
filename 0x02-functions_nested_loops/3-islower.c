@@ -1,17 +1,20 @@
 #include "main.h"
 /**
- * _islower - check the code.
+ * _islower - check the code
+ *
+ * @c: Parameter
+ *
  * Return: Always 0.
  */
 int _islower(int c)
 {
 
-	if (c < 'A')
+	if (c >= 'a' && c <= 'z')
 	{
-		_putchar('1');
+		return (1);
 	}
 	else
 	{
-		_putchar('0');
+		return (0);
 	}
 }
