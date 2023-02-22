@@ -2,11 +2,11 @@
  * _islower - check the code.
  * Return: Always 0.
  */
-char _islower(char c)
+int _islower(int c)
 {
-	int i;
+	char i;
 
-	i=islower(c);
+	c=islower(i);
 	if (true)
 		return (1);
 	else
