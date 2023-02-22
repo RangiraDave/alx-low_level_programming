@@ -3,7 +3,7 @@
  * _islower - check the code.
  * Return: Always 0.
  */
-int _islower(int c)
+void _islower(char c)
 {
 	if (c)
 	{
