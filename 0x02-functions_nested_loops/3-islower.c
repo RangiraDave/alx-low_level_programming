@@ -2,9 +2,9 @@
  * _islower - check the code.
  * Return: Always 0.
  */
-char _islower(char n)
+char test_islower(char c)
 {
-	if (islower(n))
+	if (test_islower(c))
 		return (1);
 	else
 		return (0);
