@@ -10,7 +10,7 @@
 int main(void)
 {
 	int i = 1, j = 2;
-	long int k, t;
+	int k, t;
 
 	printf("1, 2, ");
 	while (t <= 50)
@@ -18,11 +18,10 @@ int main(void)
 		k = i + j;
 		i = j;
 		j = k;
-		printf("%lu", k);
 		if (t == 50)
-			printf("%li", k);
+			printf("%i", k);
 		else
-			printf("%li", k);
+			printf("%i", k);
 		t++;
 	}
 	printf("\n");
