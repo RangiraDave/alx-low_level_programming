@@ -3,9 +3,10 @@
  * _islower - check the code.
  * Return: Always 0.
  */
-void _islower(char c)
+int _islower(int c)
 {
-	if (c)
+
+	if (_islower(c))
 	{
 		_putchar('1');
 	}
