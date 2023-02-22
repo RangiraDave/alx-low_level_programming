@@ -9,7 +9,8 @@
  */
 int main(void)
 {
-	int i = 1, j = 2, k;
+	int i = 1, j = 2;
+	double k;
 
 	printf("1, 2, ");
 	while (k <= 20365011074)
