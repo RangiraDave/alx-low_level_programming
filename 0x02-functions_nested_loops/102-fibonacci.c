@@ -20,9 +20,9 @@ int main(void)
 		j = k;
 		printf("%lu", k);
 		if (t == 50)
-			printf("%lu", k);
+			printf("%li", k);
 		else
-			printf("%lu", k);
+			printf("%li", k);
 		t++;
 	}
 	printf("\n");
