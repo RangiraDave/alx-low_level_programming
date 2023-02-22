@@ -6,7 +6,7 @@
 int _islower(int c)
 {
 
-	if (_islower(c))
+	if (c < 'A')
 	{
 		_putchar('1');
 	}
