@@ -10,19 +10,20 @@
 int main(void)
 {
 	int i = 1, j = 2;
-	int t, k;
+	long int k, t;
 
 	printf("1, 2, ");
-	for (t = 0; t < 5; t++)
+	while (while t <= 50)
 	{
-		while (true)
-		{
-			k = i + j;
-			i = j;
-			j = k;
-			printf("%i", k);
-			printf(", ");
-		}
+		k = i + j;
+		i = j;
+		j = k;
+		printf("%lu", k);
+		if (t == 50)
+			printf("%lu", k);
+		else
+			printf("%lu", k);
+		t++;
 	}
 	printf("\n");
 	return (0);
