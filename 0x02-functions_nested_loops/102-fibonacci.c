@@ -10,19 +10,15 @@
 int main(void)
 {
 	int i = 1, j = 2, k;
-	int t;
 
 	printf("1, 2, ");
-	for (t = 0; t <= 49; t++)
+	while (k <= 20365011074)
 	{
-		while (true)
-		{
-			k = i + j;
-			i = j;
-			j = k;
-			printf("%i", k);
-			printf(", ");
-		}
+		k = i + j;
+		i = j;
+		j = k;
+		printf("%i", k);
+		printf(", ");
 	}
 	printf("\n");
 	return (0);
