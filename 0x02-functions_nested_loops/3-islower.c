@@ -4,10 +4,7 @@
  */
 int _islower(int c)
 {
-	char i;
-
-	c=islower(i);
-	if (c == 1)
+	if (islower(c))
 		_putchar('1');
 	else
 		_putchar('0');
