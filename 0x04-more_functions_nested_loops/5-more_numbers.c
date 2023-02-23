@@ -2,22 +2,25 @@
 /**
  * more_numbers - to print them 10 X
  *
- * Description: Always 0 (Success)
+ * Return: Alwys 0 (Success)
  */
 void more_numbers(void)
 {
-	int i;
-	int j;
+int c, i;
 
-	j = 0;
-	while (j <= 10)
+	c = 0;
+	while (c < 10)
 	{
-		for (i = 0; i < 15; i++)
+		i = 0;
+		while (i < 15)
 		{
-			_putchar(i + '0');
+			if (i > 9)
+				_putchar(i / 10 + '0');
+
+			_putchar(i % 10 + '0');
+			i++;
 		}
-		j++;
+		c++;
 		_putchar('\n');
 	}
-	_putchar('\n');
 }
