@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_most_numbers - from 0 to 9 but not 2 and 4
- * @i: Variable for increamantation
+ * 
  * Return: Always 0 (Success)
  */
 void print_most_numbers(void)
