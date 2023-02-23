@@ -2,7 +2,7 @@
 /**
  * more_numbers - to print them 10 X
  *
- * Return: Always 0 (Success)
+ * Description: Always 0 (Success)
  */
 void more_numbers(void)
 {
