@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_square - to print square if 
- * @size: To show the size of the square
+ * print_square - to print square if
+ * @size: To show the size of the sqiuare
  * Return: none
  */
 void print_square(int size)
