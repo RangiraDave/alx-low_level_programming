@@ -5,16 +5,21 @@
  */
 void print_triangle(int size)
 {
-	int i, j, n;
-
-	for (i = 1; i <= size; i++)
+	if (size != 0)
 	{
-		for (n = 1; n <= size - i; n++)
+		int i, j, n;
+
+		for (i = 0; i < size; i++)
 		{
-			_putchar(' ');
+			for (n = 0; n < size - i; n++)
+			{
+				_putchar(' ');
+			}
+			for (j = 0; j <= i; j++)
+				_putchar('#');
+			_putchar('\n');
 		}
-		for (j = 1; j <= i; j++)
-			_putchar('#');
-		_putchar('\n');
 	}
+	else
+		_putchar('\n');
 }
