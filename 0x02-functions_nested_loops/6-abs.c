@@ -9,5 +9,5 @@ int _abs(int n)
 	int m;
 
 	m = (n * n)/2;
-	printf("%d", m);
+	return (m);
 }
