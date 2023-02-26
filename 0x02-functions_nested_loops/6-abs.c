@@ -1,12 +1,16 @@
 #include "main.h"
 /**
  * _abs - computes absolute value
+ * @n: The only variable
  * Return: Always 0 (Success)
  */
-int _abs(int)
+int _abs(int n)
 {
-	while (int)
+	int m;
+
+	while (int n)
 	{
-		return (+ int);
+		m = (n * n)/2;
+		return (m);
 	}
 }
