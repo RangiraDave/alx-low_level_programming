@@ -8,7 +8,7 @@ int _abs(int n)
 {
 	int m;
 
-	while (int n)
+	while (n)
 	{
 		m = (n * n)/2;
 		return (m);
