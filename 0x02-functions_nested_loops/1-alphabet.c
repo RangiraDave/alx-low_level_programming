@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- *print_alphabet - to print lowecase lettles
- *
- * Return: Always 0.
+ * print_alphabet - to print lowecase lettles
+ * Return: Always 0 (Success)
  */
 void print_alphabet(void)
 {
