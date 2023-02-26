@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * _isalpha() - check the code.
- * Return: Always 0.
+ * _isalpha - checks the code
+ * @c: The only Member
+ * Return: Always 0 (Success)
  */
 int _isalpha(int c)
 {
