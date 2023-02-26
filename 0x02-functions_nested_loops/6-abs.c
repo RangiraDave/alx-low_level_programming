@@ -8,6 +8,6 @@ int _abs(int n)
 {
 	int m;
 
-	m = (n * n)/2;
+	m = (n * (-1));
 	return (m);
 }
