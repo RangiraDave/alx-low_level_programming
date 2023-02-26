@@ -4,7 +4,7 @@
  * @d: variable
  * Return: Always 0
  */
-int print_last _digit(int d)
+int print_last_digit(int d)
 {
 	int m;
 
