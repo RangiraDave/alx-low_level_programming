@@ -12,8 +12,8 @@ void print_rev(char *s)
 	Temp = s;
 	while (*s++)
 	{
-		i++;
 		Temp++;
+		i++;
 	}
 	for (j = 0; j < i + 1; j++)
 	{
