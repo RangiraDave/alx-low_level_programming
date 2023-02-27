@@ -1,13 +1,15 @@
 #include "main.h"
 /**
  * _puts - prints string
- * @str: pointer
- * Return: Returns i
+ * @str: point
  */
 void _puts(char *str)
 {
-	if (*str > 'a' || *str < 'Z')
-		return (*str);
-	else
-		return (0);
+	int i, j;
+
+	i = 0;
+	while (*str++)
+		i++;
+	for (j = 0; j <= i; j++)
+		_putchar(*str[j]);
 }
