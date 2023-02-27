@@ -5,9 +5,20 @@
  */
 void print_rev(char *s)
 {
-	while (*s--)
+	int i, j;
+	char *Temp;
+
+	i = 0;
+	Temp = s;
+	while (*s++)
 	{
-		_putchar(*s++);
+		i++;
+		Temp++;
 	}
-	_putchar('n');
+	for (j = 0; j <= i; j++)
+	{
+		_putchar(*Temp);
+		Temp--;
+	}
+	_putchar('\n');
 }
