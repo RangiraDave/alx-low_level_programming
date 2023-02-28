@@ -10,7 +10,6 @@ void puts2(char *str)
 	j = 0;
 	while (*str)
 	{
-		*str++;
 		j++;
 	}
 	for (i = 0; i <= j; i++)
