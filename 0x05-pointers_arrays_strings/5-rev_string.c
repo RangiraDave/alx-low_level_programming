@@ -15,9 +15,9 @@ void rev_string(char *s)
 		++Temp;
 		i++;
 	}
-	for (j = 0; j <= i / 2; j++)
+	for (j = 0; j <= i; j++)
 	{
-		s = Temp--;
 		_putchar(*s);
+		Temp--;
 	}
 }
