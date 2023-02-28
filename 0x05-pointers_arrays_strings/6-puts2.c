@@ -5,18 +5,14 @@
  */
 void puts2(char *str)
 {
-	int i, j;
+	int j;
 
 	j = 0;
 	while (*str)
 	{
-		j++;
-	}
-	for (i = 0; i <= j; i++)
-	{
-		str++;
 		_putchar(str);
-		if (i % 2 == 0)
+		if (j % 2 != 0)
 			continue;
+		j++;
 	}
 }
