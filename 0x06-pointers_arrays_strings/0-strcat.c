@@ -6,7 +6,6 @@
  * Return: The hole string dest
  */
 
-int _putchar(char c);
 char *_strcat(char *dest, char *src)
 {
 	int i = 0, j = 0, n;
