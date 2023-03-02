@@ -6,9 +6,9 @@
  * @n: Size of The array
  * Return: Nothing
  */
-void reverse_arry(int *a, int n)
+void reverse_array(int *a, int n)
 {
-	int i, T;
+	int i, T = 0;
 
 	for (i = 0; i < n / 2; i++)
 	{
