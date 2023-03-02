@@ -7,7 +7,7 @@
 char *cap_string(char *c)
 {
 	int i;
-	
+
 	if (c[0] >= 'a' && c[0] <= 'z')
 		c[0] = c[0] - ('a' - 'A');
 
@@ -42,5 +42,5 @@ char *cap_string(char *c)
 				c[i] = c[i] - ('a' - 'A');
 		}
 	}
-	return c;
+	return (c);
 }
