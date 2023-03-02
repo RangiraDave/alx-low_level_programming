@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+
 /**
  * reverse_array - Reverses elements in an array
  * @a: pointer to array
@@ -8,12 +8,12 @@
  */
 void reverse_arry(int *a, int n)
 {
-	int i, j;
-	int *T = malloc( n * sizeof(int));
+	int i, T;
 
-	for (i = 0; i < n; i++)
-		T[i] = a[i];
-	for (j = n - 1; j >= 0; j--)
-		a[j] = T[j];
-	free(T);
+	for (i = 0; i < n / 2; i++)
+	{
+		T = a[i];
+		a[i] = a[n - i - 1];
+		a[n - i - 1] = T;
+	}
 }
