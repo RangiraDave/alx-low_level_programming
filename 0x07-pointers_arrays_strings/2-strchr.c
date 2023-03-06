@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * _strchr - Locates a char in a string
  * @s: poiter to string
@@ -16,5 +15,6 @@ char *_strchr(char *s, char c)
 			return (T);
 		T++;
 	}
-	return (NULL);
+	T = '\0';
+	return (T);
 }
