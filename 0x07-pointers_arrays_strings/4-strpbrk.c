@@ -4,6 +4,7 @@
  * _strpbrk - Searches for set of chars in string
  * @s: String to search in
  * @accept: Set to search
+ * Return: Founded string
  */
 char *_strpbrk(char *s, char *accept)
 {
