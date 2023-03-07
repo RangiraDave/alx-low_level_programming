@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * _strpbrk - Searches for set of chars in string
  * @s: String to search in
@@ -9,7 +8,7 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int i, j, n = 0;
-	char *T = NULL;
+	char *T = '\0';
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -22,7 +21,7 @@ char *_strpbrk(char *s, char *accept)
 			n++;
 			break;
 		}
-		if (T != NULL)
+		if (T != '\0')
 			break;
 	}
 	return (T);
