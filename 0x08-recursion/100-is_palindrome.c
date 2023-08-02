@@ -12,9 +12,7 @@ int is_palindrome(char *s)
 	i = 0;
 	if (*s != '\0')
 		i++;
-	else if (*s == '\0')
-		return (1);
-	else if (*s == 's[i - 1]')
+	else if (*s == '\0' && *s == 's[i - 1]')
 		return (1);
 	else
 		return (-1);
