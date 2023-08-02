@@ -3,8 +3,8 @@
  * sqroot - Checks for square root
  * @i: To be compared to base
  * @j: Base number
- * _sqrt_recursion - Returns the chossen sqrt
  * Return: The natural number of input & if not, -1.
+ * _sqrt_recursion - Returns the chossen sqrt
  */
 
 int sqroot(int i, int j)
