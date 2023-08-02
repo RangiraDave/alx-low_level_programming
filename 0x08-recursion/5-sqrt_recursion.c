@@ -12,7 +12,7 @@ int sqroot(int i, int j){
 	else{
 		return (-1);
 	}
-	return sqroot(i + 1, j)
+	return sqroot(i + 1, j);
 }
 
 int _sqrt_recursion(int n){
