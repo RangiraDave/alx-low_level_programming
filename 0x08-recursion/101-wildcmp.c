@@ -13,5 +13,5 @@ int wildcmp(char *s1, char *s2)
 		return (1);
 	else
 		return (0);
-	return wildcmp(s1 + 1, s2 + 1);
+	return (wildcmp(s1[i + 1], s2[i + 1]));
 }
