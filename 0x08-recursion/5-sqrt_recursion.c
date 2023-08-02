@@ -1,7 +1,5 @@
 #include "main.h"
 /**
- * _sqrt_recursion - function to return the chossen sqrt
- * @n: number to check for sqrt
  * sqroot - Checks for square root
  * @i: To be compared to base
  * @j: Base number
