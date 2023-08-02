@@ -10,13 +10,9 @@
 int sqroot(int i, int j)
 {
 	if (i * i == j)
-	{
 		return (i);
-	}
-	else
-	{
+	if (i * i > j)
 		return (-1);
-	}
 	return (sqroot(i + 1, j));
 }
 
