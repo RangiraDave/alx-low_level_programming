@@ -3,6 +3,8 @@
 #include<ctype.h>
 
 /**
+ * check_for_digit - To check whether char is digit
+ * @str: pointer to char in argv string
  * main - Main
  * @argc: Counter
  * @argv: Pointer
