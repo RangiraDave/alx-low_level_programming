@@ -4,6 +4,7 @@
  * main - Root function
  * @argc: Counter
  * @argv: Array of strings
+ * Return: Program name
  */
 
 int main(int argc, char *argv[])
