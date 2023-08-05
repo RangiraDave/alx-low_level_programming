@@ -25,14 +25,14 @@ int main(int argc, char **argv)
 {
 	int pro = 1;
 
-	if (argc > 1 && check_for_digit(argv[1]) && check_for_digit(argv[2]))
+	if (argc > 2 && check_for_digit(argv[1]) && check_for_digit(argv[2]))
 	{
 		pro = atoi(argv[argc - 2]) * atoi(argv[argc - 1]);
 		printf("%d\n", pro);
 	}
-	else
+	else if (argc == 1 || argc == 2 || argc == 3 || !check_for_digit(argv[1]) || !check_for_digit(argv[2]))
 	{
-		printf("Error\n");
+		printf("Error\n1\n");
 	}
 	return (0);
 }
