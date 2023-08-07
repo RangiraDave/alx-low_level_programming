@@ -9,19 +9,28 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *sum = '\0';
-
-	sum = malloc(sizeof(s1) + sizeof(s2));
-	if (*s1 == '\0' && *s2 == '\0')
-		sum = '\0';
-	else if (*s1 == '\0' && *s2 != '\0')
-		sum = s2 + '\0';
-	else if (*s1 != '\0' && *s2 == '\0')
-		sum = s1 + '\0';
-	else if (*s1 != '\0' && *s2 != '\0')
+	char *sum;
+	long unsigned int len1, len2, i = 0;
+	
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	while (s1[i] != '\0')
 	{
-		sum += s1 + s2;
+		i++;
+		len1 = i;
 	}
+	while (s2[i] != '\0')
+	{
+		i++;
+		len2 = i;
+	}
+	sum = malloc((len1 + len2) * sizeof(char));
+	for (i = 0; i <= len1; i++)
+		sum[i] = s1[i];
+	for (i = 0; i <= len1 + len2; i++)
+		sum[len1 + i] = s2[i];
+	sum[len1 + 1 + len2 + 1] = '\0';
 	return (sum);
-	free(sum);
 }
