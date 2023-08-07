@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *sum;
-	long unsigned int len1 = 0, len2 = 0, i = 0;
+	unsigned int long len1 = 0, len2 = 0, i = 0;
 	
 	if (s1 == NULL)
 		s1 = "";
@@ -24,7 +24,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		len2++;
 	}
-	sum = malloc((len1 + len2) * sizeof(char));
+	sum = malloc((len1 + len2) * sizeof(char) + 1);
 	if (s1 == NULL)
 		sum = s1;
 	if (s2 == NULL)
