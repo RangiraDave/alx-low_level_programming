@@ -10,6 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *sum;
+
 	unsigned int long len1 = 0, len2 = 0, i = 0;
 
 	if (s1 == NULL)
