@@ -1,15 +1,12 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<ctype.h>
+
 /**
  * checker - To check for digit
  * @str: Pointer to input
  *
- * main - Main Function
- * @argc: Counter
- * @argv: Pointer
- *
- * Return: Summation of two ints
+ * Return: 0 if false and 1 else
  */
 int checker(char *str){
 	int i;
@@ -20,6 +17,13 @@ int checker(char *str){
 	}
 	return (1);
 }
+
+/**
+ * main - Main Function
+ * @argc: Counter
+ * @argv: Pointer
+ * Return: Summation
+ */
 int main(int argc, char **argv){
 	int a, b, sum;
 
