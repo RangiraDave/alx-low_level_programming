@@ -1,10 +1,12 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<ctype.h>
+
 /**
  * main - Main function
  * @argc: Counter
  * @argv: Pointer
+ *
  * Return: Number of minimum coins for change
  */
 int main (int argc, char *argv[])
