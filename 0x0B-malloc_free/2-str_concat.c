@@ -27,10 +27,10 @@ char *str_concat(char *s1, char *s2)
 		len2 = i;
 	}
 	sum = malloc((len1 + len2) * sizeof(char));
-	for (i = 0; i <= len1; i++)
+	for (i = 0; i < len1; i++)
 		sum[i] = s1[i];
-	for (i = 0; i <= len1 + len2; i++)
+	for (i = 0; i < len1 + len2; i++)
 		sum[len1 + i] = s2[i];
-	sum[len1 + 1 + len2 + 1] = '\0';
+	sum[len1 + len2] = '\0';
 	return (sum);
 }
