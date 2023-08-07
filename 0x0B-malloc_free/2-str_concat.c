@@ -26,6 +26,12 @@ char *str_concat(char *s1, char *s2)
 		i++;
 		len2 = i;
 	}
+	if (s1 == NULL)
+		sum = s1;
+	if (s2 == NULL)
+		sum = s2;
+	if (s1 == NULL && s2 == NULL)
+		sum = "";
 	sum = malloc((len1 + len2) * sizeof(char));
 	for (i = 0; i < len1; i++)
 		sum[i] = s1[i];
