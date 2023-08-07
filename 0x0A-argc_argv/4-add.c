@@ -8,6 +8,7 @@
  * main - Main Function
  * @argc: Counter
  * @argv: Pointer
+ *
  * Return: Summation of two ints
  */
 int checker(char *str){
@@ -19,7 +20,7 @@ int checker(char *str){
 	}
 	return (1);
 }
-int main(int argc, char *argv[]){
+int main(int argc, char **argv){
 	int a, b, sum;
 
 	if (argc == 1)
@@ -30,7 +31,7 @@ int main(int argc, char *argv[]){
 		a = atoi(argv[1]);
 		b = atoi(argv[2]);
 		sum = a + b;
-		printf("%d\n",sum);
+		printf("%d\n", sum);
 	}
 	return (0);
 }
