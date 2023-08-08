@@ -1,9 +1,9 @@
 #include<stdlib.h>
 /**
- * argtostr - Concatinates two passed strings
+ * argstostr - Concatinates two passed strings
  * @ac: Counter
  * @av: Pointer to string
- * Return: Concatinated arguments
+ * Return: Each string passed in program on a new line
  */
 char *argstostr(int ac, char **av)
 {
@@ -16,6 +16,7 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		char *T = av[i];
+
 		while (*T)
 		{
 			len++;
