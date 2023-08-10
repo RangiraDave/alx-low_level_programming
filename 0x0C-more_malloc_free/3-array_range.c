@@ -1,4 +1,4 @@
-#include <string.h>
+#include <stdlib.h>
 /**
  * array_range - make memory for an array
  * @min: int type
