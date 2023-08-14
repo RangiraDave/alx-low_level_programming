@@ -8,7 +8,7 @@
  *
  * Description: Structure Dog and its members to use in main function
  */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
