@@ -9,22 +9,31 @@
  */
 int main (int argc, char *argv[])
 {
-	char O[] = {'+', '-', '*', '/', '%'};
-	int i, a, b, Ans;
+	int a, b;
+	int (*ans)(int, int);
 
-	i = 0;
+	/*i = 0;
 	a = atoi(argv[1]);
-	b = atoi(argv[3]);
+	b = atoi(argv[3]);*/
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	f(a, b);
-	if (argv[2][0] != O[i] && argv[2][1] == '\0')
-		i++;
-	Ans = f(a, b);
-	printf("%d\n", Ans);
+	if (argv[2][1] != '\0')
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	ans = get_op_func(argv[2]);
+	if (ans == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	a = atoi(argv[1]);
+	b = atoi (argv[3]);
+	printf("%d\n", ans(a,b));
 	return (0);
 }
