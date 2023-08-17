@@ -36,7 +36,7 @@ int op_mul(int a, int b)
  * @b: b
  * Return: Addition
  */
-int op_div (int a, int b)
+int op_div(int a, int b)
 {
 	if (b == 0)
 	{

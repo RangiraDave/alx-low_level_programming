@@ -7,14 +7,10 @@
  * @argv: Pointer to argment
  * Return: Always 0
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int a, b;
 	int (*ans)(int, int);
-
-	/*i = 0;
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);*/
 
 	if (argc != 4)
 	{
@@ -33,7 +29,7 @@ int main (int argc, char *argv[])
 		exit(99);
 	}
 	a = atoi(argv[1]);
-	b = atoi (argv[3]);
-	printf("%d\n", ans(a,b));
+	b = atoi(argv[3]);
+	printf("%d\n", ans(a, b));
 	return (0);
 }
