@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * free_listint2 - Function that frees list and sets NULL to head
@@ -12,7 +13,10 @@ void free_listint2(listint_t **head)
 	listint_t *temp;
 
 	if (*head == NULL)
+	{
+		printf("(nil)");
 		return;
+	}
 	while (*head != NULL)
 	{
 		temp = *head;
