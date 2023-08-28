@@ -13,6 +13,8 @@ size_t print_listint(const listint_t *h)
 
 	i = 0;
 
+	if (!temp)
+		return (0);
 	if (temp->next == NULL)
 	{
 		printf("%d\n", temp->n);
