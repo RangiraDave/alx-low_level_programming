@@ -14,7 +14,7 @@ size_t print_listint_safe(const listint_t *head)
 	size_t i = 0;
 
 	if (!head)
-		return (0);
+		exit(98);
 
 	while (gahoro && cyane && cyane->next)
 	{
@@ -24,7 +24,10 @@ size_t print_listint_safe(const listint_t *head)
 		i++;
 
 		if (gahoro == cyane)
+		{
+			printf("-> [%p] %d\n", (void *)gahoro, gahoro->n);
 			return (i);
+		}
 	}
 	while (gahoro)
 	{
