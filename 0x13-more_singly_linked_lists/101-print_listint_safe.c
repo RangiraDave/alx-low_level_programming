@@ -3,6 +3,9 @@
 #include <stdlib.h>
 
 /**
+ * print_listint_safe - Safely printing a list.
+ * @head: Pointer to first node.
+ * Return: Number of nodes printed.
  */
 
 size_t print_listint_safe(const listint_t *head)
@@ -22,8 +25,6 @@ size_t print_listint_safe(const listint_t *head)
 
 		if (gahoro == cyane)
 			return (i);
-		/*else
-			exit(98);*/
 	}
 	while (gahoro)
 	{
