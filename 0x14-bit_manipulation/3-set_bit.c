@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * seet_bit - Function to Modify a certain bit on an index.
+ * set_bit - Function to Modify a certain bit on an index.
  * @n: Pointer to UL integer to be modified.
  * @index: Index to which the needed bit is located.
  * Return: 1 for success and -1 for fail.
