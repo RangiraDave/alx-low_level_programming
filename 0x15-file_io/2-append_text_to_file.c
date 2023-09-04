@@ -26,6 +26,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (fp == -1)
 	{
 		perror("Error while opening file");
+		close(fp);
 		return (-1);
 	}
 	write_status = write(fp, text_content, strlen(text_content));
