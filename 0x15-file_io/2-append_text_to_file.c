@@ -21,7 +21,6 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 	if (filename && !text_content)
 	{
-		close(fp);
 		return (-1);
 	}
 	fp = open(filename, O_WRONLY | O_APPEND);
