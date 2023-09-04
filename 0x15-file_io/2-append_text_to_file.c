@@ -16,7 +16,6 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (!filename && text_content == NULL)
 	{
-		perror("Cannot find file and content to append");
 		return (-1);
 	}
 	if (filename && text_content == NULL)
