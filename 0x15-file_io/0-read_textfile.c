@@ -20,9 +20,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (buffer == NULL)
 		return (0);
 
+	if (!filename)
+	{
+		free(buffer);
+		return (0);
+	}
+
 	fd = open(filename, O_RDONLY);
 
-	if (fd == -1)
+	if (!fd || fd == -1)
 	{
 		perror("Error opening file.");
 		free(buffer);
@@ -40,7 +46,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	buffer[bytesRead] = '\0';
-	printf("%s", buffer);
+	write(1, buffer, letters);
 
 	close(fd);
 	free(buffer);
