@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error while opening file\n");
 		return (-1);
 	}
-	while ((read_bytes = read(fp_from, buffer, BUFFER_SIZE)) > 0) 
+	while ((read_bytes = read(fp_from, buffer, BUFFER_SIZE)) > 0)
 	{
 		written_bytes = write(fp_to, buffer, read_bytes);
 		if (written_bytes != read_bytes)
