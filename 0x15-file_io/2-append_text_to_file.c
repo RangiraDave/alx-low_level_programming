@@ -14,13 +14,15 @@ int append_text_to_file(const char *filename, char *text_content)
 	int fp;
 	ssize_t write_status;
 
-	if (!filename || text_content == NULL)
+	if (!filename && text_content == NULL)
 	{
+		perror("Cannot find file and content to append");
 		return (-1);
 	}
-	if (filename && text_content == NULL)
+	if (filename && !text_content)
 	{
-		return (1);
+		perror("No text to append");
+		return (-1);
 	}
 	fp = open(filename, O_WRONLY | O_APPEND);
 	if (fp == -1)
@@ -32,6 +34,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	write_status = write(fp, text_content, strlen(text_content));
 	if (write_status == -1)
 	{
+		perror("Error while writing to the file");
 		close(fp);
 		return (-1);
 	}
