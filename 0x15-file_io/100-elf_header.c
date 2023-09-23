@@ -70,7 +70,7 @@ int main(int argc, char **argv)
 	}
 
 	printf("ELF Header:\n");
-	printf("  Magic:   ");
+	printf("  Magic:  ");
 	for (i = 0; i < 16; i++)
 		printf("%02x", e_ident[i]);
 	printf("\n");
