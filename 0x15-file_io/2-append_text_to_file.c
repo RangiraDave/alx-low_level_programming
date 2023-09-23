@@ -25,7 +25,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	fp = open(filename, O_WRONLY | O_APPEND);
 	if (fp == -1)
 	{
-		perror("Error while opening file");
+/*		perror("Error while opening file");*/
 		close(fp);
 		return (-1);
 	}
