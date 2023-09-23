@@ -16,7 +16,7 @@ void cp(int file_from, int file_to, char *from_name, char *to_name)
 {
 	if (file_from == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read %s\n", from_name);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from_name);
 		exit(98);
 	}
 	if (file_to == -1)
