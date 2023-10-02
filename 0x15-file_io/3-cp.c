@@ -26,9 +26,10 @@ int main(int argc, char **argv)
 	}
 
 	fp_from = open(argv[1], O_RDONLY);
-	cp(fp_from, 0, argv[1], argv[2]);
+	cp(fp_from, argv[1], 'r');
+
 	fp_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	cp(0, fp_to, argv[1], argv[2]);
+	cp(fp_to, argv[1], 'w');
 
 	while ((read_bytes = read(fp_from, buffer, BUFFER_SIZE)) > 0)
 	{

@@ -12,16 +12,16 @@
  * Return: Nothing.
  */
 
-void cp(int file_from, int file_to, char *from_name, char *to_name)
+void cp(int fd, char *filename, char mode)
 {
-        if (file_from == -1)
+        if (mode == 'r' && fd == -1)
         {
-                dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from_name);
+                dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
                 exit(98);
         }
-        if (file_to == -1)
+        if (mode == 'w' && fd == -1)
         {
-                dprintf(STDERR_FILENO, "Error: Can't write to %s\n", to_name);
+                dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
                 exit(99);
         }
 }
