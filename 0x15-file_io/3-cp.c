@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 	cp(fp_from, argv[1], 'r');
 
 	fp_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	cp(fp_to, argv[1], 'w');
+	cp(fp_to, argv[2], 'w');
 
 	while ((read_bytes = read(fp_from, buffer, BUFFER_SIZE)) > 0)
 	{
