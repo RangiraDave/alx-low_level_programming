@@ -4,6 +4,7 @@
  * add_dnodeint_end - Function that adds node at end of
  * doubly linked list.
  * @head: Pointer to head of the list.
+ * @n: Node data.
  * Return: Pointer to the newly added node.
  */
 
