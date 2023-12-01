@@ -1,6 +1,13 @@
 #include "hash_tables.h"
 
 /**
+ * hash_table_set - Function to insert a new item (key/value pair)
+ * into the hash table and handle collisions by adding the new item
+ * to the head of the list at the index.
+ * @ht: Pointer to the hash table.
+ * @key: The key for the new item.
+ * @value: The value for the new item.
+ * Return: 1 if successful, 0 otherwise.
  */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
@@ -11,6 +18,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!key)
 		return (0);
 
+	index = key_index((unsigned char *)key, ht->size);
+
 	node = malloc(sizeof(hash_node_t));
 	if (!node)
 		return (0);
@@ -18,7 +27,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node->key = strdup(key);
 	node->value = strdup(value);
 	node->next = NULL;
-	index = key_index((unsigned char *)key, ht->size);
 
 	if (ht->array[index] == NULL)
 	{
@@ -26,12 +34,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (1);
 	}
 
-	if (ht->array[index] != NULL)
-	{
-		node->next = ht->array[index];
-		ht->array[index] = node;
-		return (1);
-	}
-
-	return (0);
+	node->next = ht->array[index];
+	ht->array[index] = node;
+	return (1);
 }
