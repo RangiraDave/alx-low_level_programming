@@ -18,12 +18,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!key)
 		return (0);
 
-	index = key_index((unsigned char *)key, ht->size);
-
 	node = malloc(sizeof(hash_node_t));
 	if (!node)
 		return (0);
 
+	index = key_index((unsigned char *)key, ht->size);
 	node->key = strdup(key);
 	node->value = strdup(value);
 	node->next = NULL;
