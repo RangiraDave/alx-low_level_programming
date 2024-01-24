@@ -1,7 +1,7 @@
 .PHONY: all
 
 CC = gcc
-SRC = $(wildcard *.c)
+SRC = *.c
 
 all:
 	@echo $(CC) $(SRC) "-o school"
