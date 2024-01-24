@@ -1,6 +1,7 @@
 .PHONY: all
 
 CC = gcc
+
 SRC = *.c
 
 all:
