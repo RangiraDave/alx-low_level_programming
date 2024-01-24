@@ -1,0 +1,15 @@
+.PHONY: all
+CC = gcc
+SRC = $(WILDCARD *.c)
+OBJ = $(SRC:%.c=%.o)
+NAME = school
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $^ -o $@
+	@echo "excecuted"
+
+%.o: %.c
+	$(CC) -c $< -o $@
+
