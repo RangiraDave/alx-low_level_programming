@@ -1,6 +1,6 @@
 CC = gcc
-SRC = *.c
+SRC = $(wildcard *.c)
 
 all:
 	@echo $(CC) $(SRC) "-o school"
-	${CC} ${SRC} -o school
+	@${CC} ${SRC} -o school
