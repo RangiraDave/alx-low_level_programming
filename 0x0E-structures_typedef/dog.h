@@ -8,6 +8,7 @@
  *
  * Description: Structure Dog and its members to use in main function
  */
+
 struct dog
 {
 	char *name;
