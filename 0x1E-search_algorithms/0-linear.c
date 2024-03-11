@@ -1,5 +1,4 @@
 #include "search_algos.h"
-#include <stdio.h>
 
 /**
  * linear_search - Function  to implement the linear search algorithm.
@@ -7,14 +6,14 @@
  * @size: Size of the array provided.
  * @value: Element to look for in the array.
  * Return: -1 if element can't be found or array is NULL
- * else the element found.
+ * And index to the found element if found.
  */
 
 int linear_search(int *array, size_t size, int value)
 {
 	size_t i;
 
-	if (!array)
+	if (!array || size == 0)
 		return (-1);
 
 	for (i = 0; i < size; i++)
